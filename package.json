@@ -1,0 +1,22 @@
+{
+  "name": "tb-types",
+  "type": "module",
+  "keywords": [
+    "lua",
+    "typescript",
+    "tstl"
+  ],
+  "scripts": {
+    "lint": "biome lint",
+    "format": "biome format --write ./types"
+  },
+  "devDependencies": {
+    "@typescript-to-lua/language-extensions": "^1.19.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@biomejs/biome": "^1.9.4"
+  }
+}
