@@ -1,18 +1,17 @@
 declare type Component<T> = { readonly _phantom: unique symbol };
 declare type Entity = { readonly _phantom: unique symbol };
 
-declare namespace Entities {
+declare namespace Entity {
 	// Components
-	function createComponent<T>(defaultVal: T): Component<T>;
+	function createComponent<T>(): Component<T>;
 	function getComponent<T>(ent: Entity): Component<T> | null;
-
-	function updateComponent<T>(
+	function setComponent<T>(
 		ent: Entity,
 		component: Component<T>,
 		value: T,
 	): void;
 
-	function findWithComponents(components: Component<any>[]): Entity[];
+	function findByComponents(components: Component<any>[]): Entity[];
 
 	// Systems
 	function registerSystem<T extends any[]>(
@@ -21,7 +20,7 @@ declare namespace Entities {
 	): void;
 
 	// Entity
-	function addAsset3d(ent: Entity, path: string): void;
-	function getChildren(ent: Entity): Entity[];
-	function createEntity(components: Component[]): Entity;
+	function fromAsset3d(path: string): Entity;
+	function create(): Entity;
+	function setParent(child: Entity, parent: Entity): void;
 }
