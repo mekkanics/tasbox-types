@@ -20,7 +20,8 @@ declare namespace Entities {
 		callback: (args: [Entity, ...T]) => void,
 	): void;
 
-	// Misc
+	// Entity
 	function addAsset3d(ent: Entity, path: string): void;
 	function getChildren(ent: Entity): Entity[];
+	function createEntity(components: Component[]): Entity;
 }
