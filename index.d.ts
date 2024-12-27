@@ -4,3 +4,4 @@
 /// <reference path="types/vector.d.ts" />
 /// <reference path="types/quaternion.d.ts" />
 /// <reference path="types/timer.d.ts" />
+/// <reference path="types/entities.d.ts" />
