@@ -2,5 +2,5 @@
 type LuauVector = { readonly __internal__: unique symbol };
 
 declare namespace vector {
-    function create(x: number, y: number, z: number): LuauVector;
+	function create(x: number, y: number, z: number): LuauVector;
 }
