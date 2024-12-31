@@ -2,10 +2,13 @@
   "compilerOptions": {
     // Enable latest features
     "lib": ["ESNext", "DOM"],
+    "types": ["lua-types/5.1"],
     "target": "ESNext",
     "module": "ESNext",
 
     "noEmit": true,
+    "strict": true,
+    "strictNullChecks": true,
     "skipLibCheck": true,
   }
 }
