@@ -1,3 +1,5 @@
+/** @noSelfInFile */
+
 type Sandbox = { readonly __internal__: unique symbol };
 
 declare namespace Luau {

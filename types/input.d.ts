@@ -1,3 +1,5 @@
+/** @noSelfInFile */
+
 declare namespace Input {
 	function addEventListener(
 		event: "press" | "release",

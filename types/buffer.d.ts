@@ -1,3 +1,5 @@
+/** @noSelfInFile */
+
 // TODO: Should be defined by lua-types/luau in the future.
 type LuauBuffer = { readonly __internal__: unique symbol };
 

@@ -1,3 +1,5 @@
+/** @noSelfInFile */
+
 declare type Component<T> = { readonly _phantom: unique symbol };
 declare type Entity = { readonly _phantom: unique symbol };
 

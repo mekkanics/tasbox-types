@@ -1,3 +1,5 @@
+/** @noSelfInFile */
+
 type Quaternion = [LuauVector, number];
 
 declare namespace Quaternion {
